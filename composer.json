@@ -1,0 +1,25 @@
+{
+    "name": "akshyaraait/service",
+    "description": "Basic Service Provider for Akshyaraait application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "AkshyaraaIt",
+        "email": "support@akshyaraait.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AkshyaraaIt\\Service\\": "src/"
+        },
+        "files": ["helpers/helper.php"]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AkshyaraaIt\\Service\\AkshyaraaItServiceProvider"
+            ]
+        }
+    }
+}
